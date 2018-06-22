@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sat Jun 16 17:27:39 2018
+# Process ID: 18700
+# Current directory: D:/vivado/MultiPeriodCPU_basys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12204 D:\vivado\MultiPeriodCPU_basys\MultiPeriodCPU.xpr
+# Log file: D:/vivado/MultiPeriodCPU_basys/vivado.log
+# Journal file: D:/vivado/MultiPeriodCPU_basys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/MultiPeriodCPU_basys/MultiPeriodCPU.xpr

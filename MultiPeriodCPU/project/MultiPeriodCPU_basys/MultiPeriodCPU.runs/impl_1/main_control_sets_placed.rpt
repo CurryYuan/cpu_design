@@ -1,0 +1,126 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Mon Jun 18 20:30:55 2018
+| Host         : Curry running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    73 |
+| Minimum Number of register sites lost to control set restrictions |    20 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             160 |           64 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |           20 |
+| Yes          | No                    | No                     |             576 |          327 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+--------------------------------+---------------------------+------------------+----------------+
+|   Clock Signal  |          Enable Signal         |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-----------------+--------------------------------+---------------------------+------------------+----------------+
+| ~clk_BUFG       |                                | pc/SR[0]                  |                3 |              5 |
+| ~clk_BUFG       | ALUout/memory_reg[7][7][0]     |                           |                2 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[13][7][0]    |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[12][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[10][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[0][7][0]     |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[11][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[9][7][0]     |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[8][7][0]     |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[56][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[6][7][0]     |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[62][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[60][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[5][7][0]     |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[59][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[61][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[58][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[57][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/E[0]                    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[55][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[54][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[53][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[52][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[51][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[50][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[4][7][0]     |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[49][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[48][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[47][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[46][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[45][7][0]    |                           |                2 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[44][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[43][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[42][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[41][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[40][7][0]    |                           |                2 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[3][7][0]     |                           |                8 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[39][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[38][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[37][7][0]    |                           |                1 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[36][7][0]    |                           |                1 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[35][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[34][7][0]    |                           |                2 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[33][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[32][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[31][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[30][7][0]    |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[2][7][0]     |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[29][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[28][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[27][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[26][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[25][7][0]    |                           |                3 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[24][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[23][7][0]    |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[22][7][0]    |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[21][7][0]    |                           |                5 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[20][7][0]    |                           |                6 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[1][7][0]     |                           |                4 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[19][7][0]    |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[18][7][0]    |                           |                8 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[17][7][0]    |                           |                1 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[16][7][0]    |                           |                7 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[15][7][0]    |                           |                8 |              8 |
+| ~clk_BUFG       | ALUout/memory_reg[14][7][0]    |                           |                7 |              8 |
+|  clk_div/out[0] |                                |                           |                5 |             10 |
+|  mclk_IBUF_BUFG |                                |                           |                4 |             14 |
+|  clk_BUFG       |                                | ALUout/o_data[31]_i_1_n_0 |               17 |             31 |
+|  clk_BUFG       | insmemory/Address_reg[31]_0[0] | pc/SR[0]                  |               15 |             32 |
+|  clk_BUFG       | control/out[0]                 |                           |               10 |             32 |
+| ~clk_BUFG       | insmemory/E[0]                 |                           |               15 |             32 |
+| ~clk_BUFG       |                                |                           |               18 |             35 |
+|  clk_BUFG       |                                |                           |               37 |            101 |
++-----------------+--------------------------------+---------------------------+------------------+----------------+
+
+

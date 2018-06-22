@@ -1,0 +1,28 @@
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe -wto 1d1bcee649e54bf79e3c60e91423a76a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 8 for port a_to_g [D:/vivado/MultiPeriodCPU_basys/MultiPeriodCPU.srcs/sim_1/new/test.v:29]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/vivado/MultiPeriodCPU_basys/MultiPeriodCPU.srcs/sources_1/new/Extend.v:29]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/vivado/MultiPeriodCPU_basys/MultiPeriodCPU.srcs/sources_1/new/Extend.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PCAddr
+Compiling module xil_defaultlib.InsMemory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.DataLate
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.DataSelect_2
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

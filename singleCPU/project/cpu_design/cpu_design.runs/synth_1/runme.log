@@ -1,0 +1,424 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 289.203 ; gain = 117.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/main.v:22]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pc' (1#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-638] synthesizing module 'ROM' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/vivado/cpu_design/rom_data.txt' is read successfully [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:32]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-638] synthesizing module 'CU' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:52]
+WARNING: [Synth 8-3848] Net InsMemRW in module/entity CU does not have driver. [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:32]
+INFO: [Synth 8-256] done synthesizing module 'CU' (3#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-638] synthesizing module 'dataSelect_5_Bit' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dataSelect_5_Bit' (4#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/regFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (5#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/regFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'pcAddFour' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:43]
+INFO: [Synth 8-256] done synthesizing module 'pcAddFour' (6#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:43]
+INFO: [Synth 8-638] synthesizing module 'pcAddImm' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:49]
+INFO: [Synth 8-256] done synthesizing module 'pcAddImm' (7#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:49]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/RAM.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'RAM_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+RAM "RAM_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'RAM' (8#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'dataSelect_32_Bit2' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:48]
+INFO: [Synth 8-256] done synthesizing module 'dataSelect_32_Bit2' (9#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:48]
+INFO: [Synth 8-638] synthesizing module 'dataSelect_32_Bit' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:40]
+WARNING: [Synth 8-567] referenced signal 'A' should be on the sensitivity list [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:39]
+WARNING: [Synth 8-567] referenced signal 'B' should be on the sensitivity list [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:39]
+WARNING: [Synth 8-567] referenced signal 'c' should be on the sensitivity list [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:39]
+INFO: [Synth 8-256] done synthesizing module 'dataSelect_32_Bit' (10#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:32]
+INFO: [Synth 8-638] synthesizing module 'signExtend' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/signExtend.v:23]
+WARNING: [Synth 8-567] referenced signal 'zero_num' should be on the sensitivity list [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/signExtend.v:32]
+INFO: [Synth 8-256] done synthesizing module 'signExtend' (11#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/signExtend.v:23]
+INFO: [Synth 8-638] synthesizing module 'pcJump' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:57]
+INFO: [Synth 8-256] done synthesizing module 'pcJump' (12#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/pc.v:57]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-151] case item 3'b011 is unreachable [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ALU.v:33]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (13#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/main.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 330.168 ; gain = 158.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 330.168 ; gain = 158.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 330.168 ; gain = 158.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "ALUSrcA" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ALUSrcB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "DBDataSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RegWire" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RegDst" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ExtSel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "nWR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pcWire" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[31]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/ROM.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'pcWire_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:180]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'DBDataSrc_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWire_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'nRD_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:141]
+WARNING: [Synth 8-327] inferring latch for variable 'nWR_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:140]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'pcSrc_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/CU.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'S_reg' [D:/vivado/cpu_design/cpu_design.srcs/sources_1/new/dataSelect.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 370.684 ; gain = 198.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 183   
+	   2 Input      5 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 32    
+	   5 Input      1 Bit        Muxes := 61    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ROM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 4     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 16    
+Module dataSelect_5_Bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module pcAddFour 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module pcAddImm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 183   
+	   5 Input      1 Bit        Muxes := 61    
+Module dataSelect_32_Bit2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module dataSelect_32_Bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module signExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 456.223 ; gain = 284.285
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design main has port reset driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 457.500 ; gain = 285.563
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 457.500 ; gain = 285.563
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[7] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[6] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[5] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[4] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[3] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[2] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[1] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[0] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[23] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[22] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[21] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[20] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[19] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[18] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[17] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[16] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[31] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[30] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[29] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[28] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[27] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[26] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[25] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ROM/dataOut_reg[24] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/pcWire_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ALUSrcA_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ALUSrcB_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/DBDataSrc_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/RegWire_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/nRD_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/nWR_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/RegDst_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ExtSel_reg ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/pcSrc_reg[1] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/pcSrc_reg[0] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ALUOp_reg[2] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ALUOp_reg[1] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\CU/ALUOp_reg[0] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][31] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][30] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][29] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][28] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][27] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][26] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][25] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][24] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][23] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][22] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][21] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][20] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][19] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][18] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][17] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][16] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][10] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][9] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][8] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][7] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][6] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][5] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][4] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][3] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][2] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][1] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[1][0] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][31] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][30] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][29] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][28] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][27] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][26] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][25] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][24] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][23] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][22] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][21] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][20] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][19] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][18] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][17] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][16] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][15] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][14] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][13] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][12] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][11] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\RegFile/regFile_reg[2][10] ) is unused and will be removed from module main.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 457.500 ; gain = 285.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-4485] pin reset is connected to multiply driven net where other driver is constant
+ERROR: synthesis optimization failed, fatal insert_io failure.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 457.500 ; gain = 242.594
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 124 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Fri May 18 09:38:14 2018...
